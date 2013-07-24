@@ -18,3 +18,4 @@ workspace/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
 workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
 .history/
 bin/
+*snap
