@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;library.CachedAlgorithms.phi(...)&apos; to &apos;eulerFunction&apos;&#x0A;- Original project: &apos;library&apos;&#x0A;- Original element: &apos;library.CachedAlgorithms.phi(...)&apos;&#x0A;- Renamed element: &apos;library.CachedAlgorithms.eulerFunction(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;phi&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;library{CachedAlgorithms.java[CachedAlgorithms~phi~I" name="eulerFunction" references="true" stamp="1374636561266" version="1.0"/>
+</session>
