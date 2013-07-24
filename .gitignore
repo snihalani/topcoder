@@ -6,3 +6,5 @@ workspace/.metadata/.plugins/org.eclipse.e4.workbench/
 eclipse/configuration/org.eclipse.core.runtime/.manager/.*
 eclipse/configuration/org.eclipse.equinox.app/.manager/.*
 eclipse/configuration/org.eclipse.osgi/.manager/.*
+*tasks.xml.zip
+workspace/.metadata/.plugins/org.eclipse.team.cvs.core/.running
