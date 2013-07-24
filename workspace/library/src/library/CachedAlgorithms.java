@@ -35,6 +35,7 @@ public class CachedAlgorithms {
 		return res;
 	}
 
+	
 	public static void main(String[] args) {
 		for (int i = 0; i < 6; i++) {
 			System.out.println(pow(i, 8));

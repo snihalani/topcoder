@@ -11,3 +11,9 @@ workspace/.metadata/.plugins/org.eclipse.team.cvs.core/.running
 eclipse/configuration/org.eclipse.osgi/bundles/77/1/.cp/icons/full/etool16/*gif
 eclipse/configuration/org.eclipse.osgi/bundles/202/1/.cp/icons/full/elcl16/*gif
 eclipse/configuration/org.eclipse.osgi/bundles/277/1/.cp/icons/etool16/*gif
+workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/library/.indexes/e4/bb/history.index
+workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/library/org.eclipse.jdt.core/state.dat
+workspace/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
+workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.history/
+bin/
