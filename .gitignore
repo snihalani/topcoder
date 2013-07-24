@@ -1,1 +1,4 @@
 \.DS_*
+workspace/.metadata/.log
+workspace/.metadata/.plugins/org.eclipse.core.resources/.root/*tree
+workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/
