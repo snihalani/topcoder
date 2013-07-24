@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='update site: http://fornwall.net/eclipsecoder/' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1374628379492'/>
+    <property name='eclipse.p2.force.threading' value='true'/>
+    <property name='site.checksum' value='1023085484'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='10'>
+    <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/features/net.fornwall.eclipsecoder.pythonsupport_0.2.2-feature.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/plugins/net.fornwall.eclipsecoder.ccsupport_0.2.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder' version='0.3.12'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/features/net.fornwall.eclipsecoder_0.3.12-feature.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.archive' version='0.3.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/plugins/net.fornwall.eclipsecoder.archive_0.3.5.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/features/net.fornwall.eclipsecoder.ccsupport_0.2.5-feature.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.javasupport' version='0.2.7'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/features/net.fornwall.eclipsecoder.javasupport_0.2.7-feature.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.javasupport' version='0.2.7'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/plugins/net.fornwall.eclipsecoder.javasupport_0.2.7.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/plugins/net.fornwall.eclipsecoder.pythonsupport_0.2.2.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder' version='0.3.12'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/plugins/net.fornwall.eclipsecoder_0.3.12.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.archive' version='0.3.5'>
+      <repositoryProperties size='1'>
+        <property name='artifact.reference' value='http://fornwall.net/eclipsecoder/features/net.fornwall.eclipsecoder.archive_0.3.5-feature.jar'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config transient="false" date="1371180212808">
+<config transient="false" date="1374628397657">
 	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="platform:/base/">
 		<feature id="org.eclipse.rcp.configuration" url="features/org.eclipse.rcp.configuration_1.0.0.v20130521-1847/" version="1.0.0.v20130521-1847">
 		</feature>
@@ -17,11 +17,15 @@
 		</feature>
 		<feature id="org.eclipse.recommenders.feature.rcp.core" url="features/org.eclipse.recommenders.feature.rcp.core_1.0.4.v20130612-1006-b77/" version="1.0.4.v20130612-1006-b77">
 		</feature>
+		<feature id="net.fornwall.eclipsecoder.javasupport" url="features/net.fornwall.eclipsecoder.javasupport_0.2.7/" version="0.2.7">
+		</feature>
 		<feature id="org.eclipse.mylyn.builds" plugin-identifier="org.eclipse.mylyn.builds.core" url="features/org.eclipse.mylyn.builds_1.1.0.v20130612-0100/" version="1.1.0.v20130612-0100">
 		</feature>
 		<feature id="org.eclipse.epp.package.java.feature" plugin-identifier="org.eclipse.epp.package.java" url="features/org.eclipse.epp.package.java.feature_2.0.0.20130613-0530/" version="2.0.0.20130613-0530">
 		</feature>
 		<feature id="org.eclipse.mylyn.wikitext_feature" plugin-identifier="org.eclipse.mylyn.wikitext.core" url="features/org.eclipse.mylyn.wikitext_feature_1.8.0.v20130612-0100/" version="1.8.0.v20130612-0100">
+		</feature>
+		<feature id="net.fornwall.eclipsecoder" url="features/net.fornwall.eclipsecoder_0.3.12/" version="0.3.12">
 		</feature>
 		<feature id="org.eclipse.mylyn.ide_feature" plugin-identifier="org.eclipse.mylyn.context.core" url="features/org.eclipse.mylyn.ide_feature_3.9.0.v20130612-0100/" version="3.9.0.v20130612-0100">
 		</feature>
@@ -41,9 +45,9 @@
 		</feature>
 		<feature id="org.eclipse.wb.core.java.feature" url="features/org.eclipse.wb.core.java.feature_1.6.0.r43x201305211947/" version="1.6.0.r43x201305211947">
 		</feature>
-		<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.5.0.v201209252144-7C7OFvSF7RZHQWIhO6PwRi/" version="3.5.0.v201209252144-7C7OFvSF7RZHQWIhO6PwRi">
-		</feature>
 		<feature id="org.eclipse.cvs" url="features/org.eclipse.cvs_1.4.0.v20130605-2000/" version="1.4.0.v20130605-2000">
+		</feature>
+		<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.5.0.v201209252144-7C7OFvSF7RZHQWIhO6PwRi/" version="3.5.0.v201209252144-7C7OFvSF7RZHQWIhO6PwRi">
 		</feature>
 		<feature id="org.eclipse.mylyn.cvs" plugin-identifier="org.eclipse.mylyn.versions.core" url="features/org.eclipse.mylyn.cvs_1.1.0.v20130612-0100/" version="1.1.0.v20130612-0100">
 		</feature>
@@ -103,9 +107,9 @@
 		</feature>
 		<feature id="org.eclipse.recommenders.feature.extdoc.rcp" url="features/org.eclipse.recommenders.feature.extdoc.rcp_1.0.4.v20130612-1006-b77/" version="1.0.4.v20130612-1006-b77">
 		</feature>
-		<feature id="org.eclipse.e4.rcp" url="features/org.eclipse.e4.rcp_1.2.0.v20130605-1738/" version="1.2.0.v20130605-1738">
-		</feature>
 		<feature id="org.eclipse.epp.mpc" plugin-identifier="org.eclipse.epp.mpc.ui" url="features/org.eclipse.epp.mpc_1.2.0.v20130612-1900/" version="1.2.0.v20130612-1900">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" url="features/org.eclipse.e4.rcp_1.2.0.v20130605-1738/" version="1.2.0.v20130605-1738">
 		</feature>
 		<feature id="org.eclipse.epp.package.common.feature" url="features/org.eclipse.epp.package.common.feature_2.0.0.20130613-0530/" version="2.0.0.20130613-0530">
 		</feature>
@@ -117,9 +121,9 @@
 		</feature>
 		<feature id="org.eclipse.mylyn.commons.repositories" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons.repositories_1.1.0.v20130612-0100/" version="1.1.0.v20130612-0100">
 		</feature>
-		<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.2.0.v20130604-2046/" version="2.2.0.v20130604-2046">
-		</feature>
 		<feature id="org.eclipse.emf.ecore" url="features/org.eclipse.emf.ecore_2.9.0.v20130528-0742/" version="2.9.0.v20130528-0742">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.2.0.v20130604-2046/" version="2.2.0.v20130604-2046">
 		</feature>
 	</site>
 </config>

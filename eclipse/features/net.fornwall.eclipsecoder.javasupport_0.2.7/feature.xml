@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="net.fornwall.eclipsecoder.javasupport" version="0.2.7" label="EclipseCoder Java Support" provider-name="Fredrik Fornwall">
+  <install-handler/>
+  <description url="http://fornwall.net/eclipsecoder/">Plug-in allowing you to use Java to solve TopCoder problems.</description>
+  <copyright>2006 Fredrik Fornwall. All rights reserved.</copyright>
+  <license>Apache License 2.0</license>
+  <url><update label="EclipseCoder Update Site" url="http://fornwall.net/eclipsecoder/"/></url>
+  <requires>
+    <import plugin="org.eclipse.core.runtime"/>
+    <import plugin="org.eclipse.debug.ui"/>
+    <import plugin="org.eclipse.ui"/>
+    <import plugin="org.eclipse.jdt.core"/>
+    <import plugin="org.eclipse.jdt.ui"/>
+    <import plugin="org.eclipse.jdt.launching"/>
+    <import plugin="net.fornwall.eclipsecoder"/>
+  </requires>
+  <plugin id="net.fornwall.eclipsecoder.javasupport" unpack="false" download-size="12" install-size="12" version="0.2.7"/>
+</feature>

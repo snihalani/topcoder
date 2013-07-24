@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='update site: http://fornwall.net/eclipsecoder/' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1374628359855'/>
+    <property name='site.checksum' value='1023085484'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://fornwall.net/eclipsecoder/' url='http://fornwall.net/eclipsecoder/' type='1' options='0'/>
+    <repository uri='http://fornwall.net/eclipsecoder/' url='http://fornwall.net/eclipsecoder/' type='0' options='0'/>
+  </references>
+  <units size='16'>
+    <unit id='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.pythonsupport' range='[0.0.0,0.2.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'/>
+        <provided namespace='osgi.bundle' name='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.fornwall.eclipsecoder.pythonsupport&#xA;Bundle-Version: 0.2.2&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.archive.feature.group' version='0.3.5' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.archive.feature.group' range='[0.0.0,0.3.5)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Problem Archive'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to check out old problems from the TopCoder problem archive.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.archive.feature.group' version='0.3.5'/>
+      </provides>
+      <requires size='7'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.archive' range='[0.3.5,0.3.5]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.archive.feature.jar' range='[0.3.5,0.3.5]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.feature.group' version='0.3.12' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.feature.group' range='[0.0.0,0.3.12)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Core'/>
+        <property name='org.eclipse.equinox.p2.description' value='The core EclipseCoder plug-in. Must by supplemented with the TopCoder contest applet and support for at least one programming language.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.feature.group' version='0.3.12'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder' range='[0.3.12,0.3.12]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.feature.jar' range='[0.3.12,0.3.12]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.pythonsupport.feature.jar' version='0.2.2'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Python Support'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to use Python to solve TopCoder problems'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.pythonsupport.feature.jar' version='0.2.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.pythonsupport' version='0.2.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.pythonsupport.feature.group' version='0.2.2' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.pythonsupport.feature.group' range='[0.0.0,0.2.2)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Python Support'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to use Python to solve TopCoder problems'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.pythonsupport.feature.group' version='0.2.2'/>
+      </provides>
+      <requires size='10'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.python.pydev' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.python.pydev.debug' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.python.pydev.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.pythonsupport' range='[0.2.2,0.2.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.pythonsupport.feature.jar' range='[0.2.2,0.2.2]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.javasupport.feature.group' version='0.2.7' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.javasupport.feature.group' range='[0.0.0,0.2.7)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Java Support'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to use Java to solve TopCoder problems.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.javasupport.feature.group' version='0.2.7'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.launching' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.javasupport' range='[0.2.7,0.2.7]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.javasupport.feature.jar' range='[0.2.7,0.2.7]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.ccsupport' version='0.2.5' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.ccsupport' range='[0.0.0,0.2.5)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'/>
+        <provided namespace='osgi.bundle' name='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.fornwall.eclipsecoder.ccsupport&#xA;Bundle-Version: 0.2.5&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.feature.jar' version='0.3.12'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Core'/>
+        <property name='org.eclipse.equinox.p2.description' value='The core EclipseCoder plug-in. Must by supplemented with the TopCoder contest applet and support for at least one programming language.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.feature.jar' version='0.3.12'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.fornwall.eclipsecoder' version='0.3.12'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder' version='0.3.12'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='http://fornwall.net/eclipsecoder/site.xml.EclipseCoder' version='1.0.0.07M7ycM92Dh'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder'/>
+        <property name='org.eclipse.equinox.p2.description' value='A set of Eclipse plug-ins for working with TopCoder problems.'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='http://fornwall.net/eclipsecoder/site.xml.EclipseCoder' version='1.0.0.07M7ycM92Dh'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.archive.feature.group' range='[0.3.5,0.3.5]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.feature.group' range='[0.3.12,0.3.12]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.pythonsupport.feature.group' range='[0.2.2,0.2.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.javasupport.feature.group' range='[0.2.7,0.2.7]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.ccsupport.feature.group' range='[0.2.5,0.2.5]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.ccsupport.feature.jar' version='0.2.5'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder C++ Support'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to use C++ to solve TopCoder problems.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.ccsupport.feature.jar' version='0.2.5'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.ccsupport' version='0.2.5'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.javasupport.feature.jar' version='0.2.7'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Java Support'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to use Java to solve TopCoder problems.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.javasupport.feature.jar' version='0.2.7'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.fornwall.eclipsecoder.javasupport' version='0.2.7'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.javasupport' version='0.2.7'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.javasupport' version='0.2.7' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.javasupport' range='[0.0.0,0.2.7)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.javasupport' version='0.2.7'/>
+        <provided namespace='osgi.bundle' name='net.fornwall.eclipsecoder.javasupport' version='0.2.7'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.javasupport' version='0.2.7'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.fornwall.eclipsecoder.javasupport&#xA;Bundle-Version: 0.2.7&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.archive' version='0.3.5' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.archive' range='[0.0.0,0.3.5)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.archive' version='0.3.5'/>
+        <provided namespace='osgi.bundle' name='net.fornwall.eclipsecoder.archive' version='0.3.5'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder.archive' version='0.3.5'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.fornwall.eclipsecoder.archive&#xA;Bundle-Version: 0.3.5&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder' version='0.3.12' singleton='false'>
+      <update id='net.fornwall.eclipsecoder' range='[0.0.0,0.3.12)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.partial.iu' value='true'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder' version='0.3.12'/>
+        <provided namespace='osgi.bundle' name='net.fornwall.eclipsecoder' version='0.3.12'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='net.fornwall.eclipsecoder' version='0.3.12'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: net.fornwall.eclipsecoder&#xA;Bundle-Version: 0.3.12&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.archive.feature.jar' version='0.3.5'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder Problem Archive'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to check out old problems from the TopCoder problem archive.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.archive.feature.jar' version='0.3.5'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='net.fornwall.eclipsecoder.archive' version='0.3.5'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='net.fornwall.eclipsecoder.archive' version='0.3.5'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+    <unit id='net.fornwall.eclipsecoder.ccsupport.feature.group' version='0.2.5' singleton='false'>
+      <update id='net.fornwall.eclipsecoder.ccsupport.feature.group' range='[0.0.0,0.2.5)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='EclipseCoder C++ Support'/>
+        <property name='org.eclipse.equinox.p2.description' value='Plug-in allowing you to use C++ to solve TopCoder problems.'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://fornwall.net/eclipsecoder/'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Fredrik Fornwall'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.ccsupport.feature.group' version='0.2.5'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.managedbuilder.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.debug.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.debug.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.cdt.debug.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.ccsupport' range='[0.2.5,0.2.5]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='net.fornwall.eclipsecoder.ccsupport.feature.jar' range='[0.2.5,0.2.5]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license>
+          Apache License 2.0
+        </license>
+      </licenses>
+      <copyright>
+        2006 Fredrik Fornwall. All rights reserved.
+      </copyright>
+    </unit>
+  </units>
+</repository>
