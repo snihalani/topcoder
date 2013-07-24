@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
 languagePreference=Java
+tcAutoLogon=true
+tcUserName=snihalani

@@ -8,3 +8,6 @@ eclipse/configuration/org.eclipse.equinox.app/.manager/.*
 eclipse/configuration/org.eclipse.osgi/.manager/.*
 *tasks.xml.zip
 workspace/.metadata/.plugins/org.eclipse.team.cvs.core/.running
+eclipse/configuration/org.eclipse.osgi/bundles/77/1/.cp/icons/full/etool16/*gif
+eclipse/configuration/org.eclipse.osgi/bundles/202/1/.cp/icons/full/elcl16/*gif
+eclipse/configuration/org.eclipse.osgi/bundles/277/1/.cp/icons/etool16/*gif
