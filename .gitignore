@@ -3,3 +3,5 @@ workspace/.metadata/.log
 workspace/.metadata/.plugins/org.eclipse.core.resources/.root/*tree
 workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/
 workspace/.metadata/.plugins/org.eclipse.e4.workbench/
+eclipse/configuration/org.eclipse.core.runtime/.manager/.*
+eclipse/configuration/org.eclipse.equinox.app/.manager/.*
